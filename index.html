@@ -2,65 +2,50 @@
 <html>
 	<head>
 		<title>Аэрография от Siren-art</title>
+		<!-- Не будет интернета - не будет и шрифта -->
 		<link href="http://allfont.ru/allfont.css?fonts=capture-it" rel="stylesheet" type="text/css" />
-		<link rel="stylesheet" type="text/css" href="CSS/style.css">
-		<script src="js/changeBox.js"></script> 
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="js/setCategory.js"></script> 
 		<script src="js/slider.js"></script> 
 		<meta charset="utf-8">
+</script>
 	</head>
-	<body>
-		<div class="menu leftcol">
-			<a onclick="changeCategory(1)">Автомобили</a><br>
-		    <a onclick="changeCategory(2)">Аквапарк</a><br>
-            <a onclick="changeCategory(3)">Лаковая миниатюра</a><br>
-            <a onclick="changeCategory(4)">Малые формы</a><br>
-            <a onclick="changeCategory(5)">Наружное оформление</a><br>
-            <a onclick="changeCategory(6)">Интерьеры</a><br>
-            <a onclick="changeCategory(7)">Самолёты</a><br>
-            <a onclick="changeCategory(8)">Скульптуры</a><br>
-            <a onclick="changeCategory(9)">Шлемы</a><br>
-		</div>
+	<body">
+	<div class="wrapper">
+		<img class="title" src="images/title.gif">
 
-		<div class="rightcol" id="slider">
-
-			<img class="cars" src="images/gallery/cars/img1.png"
-			 id="categoryImage1">
-
-			<img  class="aquapark" src="images/gallery/aquapark/img1.jpg" 
-			id="categoryImage2">
-
-			<img  class="lacquer_miniatire" src="images/gallery/lacquer_miniatire/img1.jpg" 
-			id="categoryImage3">
-
-			<img class="small_forms" src="images/gallery/small_forms/img1.jpg" 
-			id="categoryImage4">
-
-			<img  class="exterior_design" src="images/gallery/exterior_design/img1.jpg" 
-			id="categoryImage5">
-
-			<img  class="interiors" src="images/gallery/interiors/img1.jpg"
-			 id="categoryImage6">
-	
-			<img class="aircrafts" src="images/gallery/aircrafts/img1.jpg"
-			 id="categoryImage7">
-
-			<img  class="sculpture" src="images/gallery/sculpture/img1.jpg"
-			 id="categoryImage8">
-
-			<img  class="helmets" src="images/gallery/helmets/img1.jpg"
-			 id="categoryImage9">
-			
-		<div class="controls">
-			<div class="left_hold">
-				<img onClick="photo(-1)" class="left" src="images/controls/prev.png">
+		<div class="middle">
+			<div class="menu leftcol">
+				<a onclick="setCategory('cars')">Автомобили</a><br>
+			  <a onclick="setCategory('aquapark')">Аквапарк</a><br>
+	      <a onclick="setCategory('lacquer_miniature')">Лаковая миниатюра</a><br>
+	      <a onclick="setCategory('small_forms')">Малые формы</a><br>
+	      <a onclick="setCategory('exterior_design')">Наружное оформление</a><br>
+	      <a onclick="setCategory('interiors')">Интерьеры</a><br>
+	      <a onclick="setCategory('aircrafts')">Самолёты</a><br>
+	      <a onclick="setCategory('sculpture')">Скульптуры</a><br>
+	      <a onclick="setCategory('helmets')">Шлемы</a><br>
 			</div>
-			<div class="right_hold">
-				<img onClick="photo(1)" class="right" src="images/controls/next.png">
+
+			<div class="rightcol" id="slider">
+
+			<!-- <div class=some id=categories> -->
+				<img id="categories" src="images/categories/cars/img1.png">
+			<!-- </div> -->
+				
+				<div class="controls">
+
+					<div class="left_hold">
+						<img onClick="photo(-1)" class="left" src="images/control.svg">
+					</div>
+					<div class="right_hold">
+						<img onClick="photo(1)" class="right" src="images/control.svg">
+					</div>
+
+				</div>
 			</div>
-		</div>
-			
 
 		</div>
-
+	</div>
 	</body>
 </html>

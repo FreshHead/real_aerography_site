@@ -1,0 +1,62 @@
+*{
+	margin:0px;
+	}
+
+html { 
+  background: url(images/bg.jpg) ; 
+  -moz-background-size: cover;
+}
+
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+/*#categories :not(.cars) {
+	display: none;
+	margin: 0 auto;
+}*/
+
+.leftcol {
+  float: left; 
+}
+.rightcol {
+  margin-left: 400px;
+}
+
+h1{
+	text-align: center;
+}
+
+.menu { 
+	font-family: 'Capture it', arial;
+	color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.left {
+	transform:scale(-1,1);
+	position: absolute;
+	top:500px;
+	left:53%;
+	opacity:0.3;
+	transition: all .2s ease-in-out 0s;
+	}
+
+.right {
+	position: absolute;
+	top:500px;
+	left:56%;
+	opacity:0.4; 
+	transition: all .5s ease-in-out 0s;
+	}
+
+.left_hold:hover .left {
+	opacity:0.9;
+	}
+
+.right_hold:hover .right {
+	opacity:0.9;
+}

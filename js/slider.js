@@ -1,34 +1,13 @@
-var imageCount = 1;
-var total = 5;
+var totalImages = 5;
 
 function photo(x) {
-
-	for(i = 1; i <= 9; i++) {
-		var categoryImage = document.getElementById("categoryImage" + i),
-		style = window.getComputedStyle(categoryImage),
-		display = style.getPropertyValue('display');
-
-		// total = countImages(categoryImage);
-		if(display == 'inline') {
-			imageCount = imageCount + x;
-			if(imageCount > total) {
-				imageCount = 1;
-			}
-			if(imageCount < 1){
-				imageCount = total;
-			}
-			var folderName = categoryImage.className,
-			imagePath =  "images/gallery/" + folderName + "/img"+ imageCount +".png";
-
-			categoryImage.src = imagePath;
-		}
+	var imageSource =  document.getElementById('categories').src;
+	var imageNumber =  parseInt(imageSource.match(/\d/)[0]) + x;
+	if(imageNumber == 0) {
+		imageNumber = totalImages;
+	} else if(imageNumber == totalImages + 1){
+		imageNumber = 1;
 	}
-
-	// countImages(image) {
-	// 	count = 0;
-	// 	while(image){
-
-	// 	}
-	// }
+	document.getElementById('categories').src = imageSource.replace(/\d/, imageNumber);
+	console.log(document.getElementById('categories').src);
 }
-
