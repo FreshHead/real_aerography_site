@@ -3,30 +3,24 @@
 	}
 
 html { 
-  background: url(images/bg.jpg) ; 
-  -moz-background-size: cover;
+	background-color: #000000;
+	/*background-color: #0a0a0a;*/
+  /*background: url(images/bg2.jpg) ; */
+  /*-moz-background-size: cover;*/
+
 }
 
 .wrapper {
+
 	width: 1200px;
 	margin: 0 auto;
-	min-height: 100%;
 }
-
-/*#categories :not(.cars) {
-	display: none;
-	margin: 0 auto;
-}*/
 
 .leftcol {
   float: left; 
 }
 .rightcol {
   margin-left: 400px;
-}
-
-h1{
-	text-align: center;
 }
 
 .menu { 
@@ -51,12 +45,20 @@ h1{
 	left:56%;
 	opacity:0.4; 
 	transition: all .5s ease-in-out 0s;
-	}
+}
 
 .left_hold:hover .left {
 	opacity:0.9;
-	}
+}
 
 .right_hold:hover .right {
 	opacity:0.9;
+}
+
+#footer {
+	margin-top: 200px;
+}
+
+p {
+	color: white;
 }
