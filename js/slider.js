@@ -1,6 +1,10 @@
+function setCategory(folderName) {
+	document.getElementById('categories').src = "images/categories/" + folderName + "/img1.png";
+}
+
 var totalImages = 5;
 
-function photo(x) {
+function shiftImageInCategory(x) {
 	var imageSource =  document.getElementById('categories').src;
 	var imageNumber =  parseInt(imageSource.match(/\d/)[0]) + x;
 	if(imageNumber == 0) {

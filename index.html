@@ -5,17 +5,15 @@
 		<!-- Не будет интернета - не будет и шрифта -->
 		<link href="http://allfont.ru/allfont.css?fonts=capture-it" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="js/setCategory.js"></script> 
 		<script src="js/slider.js"></script> 
 		<meta charset="utf-8">
 </script>
 	</head>
-	<body">
-		<div class="wrapper">
-			<img class="title" src="images/title4.gif">
-<!-- <iframe src="http://ntmaker.gfto.ru/newneontext/?image_background_.. Сирень-арт&image_font_family=RosaM&" frameborder='no' scrolling='no' width="1200" height="250"></iframe> -->
-			<div class="middle">
-				<div class="menu leftcol">
+	<body>
+			
+<img id="title" src="images/title.gif">
+<div id="wrapper">
+				<div id="sidebar">
 					<a onclick="setCategory('cars')">Автомобили</a><br>
 				  <a onclick="setCategory('aquapark')">Аквапарк</a><br>
 		      <a onclick="setCategory('lacquer_miniature')">Лаковая миниатюра</a><br>
@@ -26,33 +24,27 @@
 		      <a onclick="setCategory('sculpture')">Скульптуры</a><br>
 		      <a onclick="setCategory('helmets')">Шлемы</a><br>
 				</div>
-
-				<div class="rightcol" id="slider">
-
-					<img id="categories" src="images/categories/cars/img1.png">
-					
-					<div class="controls">
-
+				<div id="slider">
+					<img id="categories" src="images/categories/cars/img1.png">					
+					<!-- <div class="controls">
 						<div class="left_hold">
-							<img onClick="photo(-1)" class="left" src="images/control.svg">
+							<img onClick="shiftImageInCategory(-1)" class="left" src="images/control.svg">
 						</div>
 						<div class="right_hold">
-							<img onClick="photo(1)" class="right" src="images/control.svg">
-						</div>
-
+							<img onClick="shiftImageInCategory(1)" class="right" src="images/control.svg">
+						</div> -->
 					</div>
+						<div id="footer">
+					<img id="siren" src="images/siren.png">
+					<p id="contacts">Ганиев Сирень Арсланович<br>
+					почта: siren-art@mail.ru<br>
+					телефон: +7(909)308-87-99</p>	
+	    </div>
 				</div>
 
+		</div>
 			</div>
 			
-			<div id="footer">
-				<img src="images/siren.png">
-				<p>Ганиев Сирень Арсланович </p>
-				<p>почта: siren-art@mail.ru</p>
-				<p>телефон: +7(909)308-87-99</p>	
-	    </div>
-
-		</div>
-
+		
 	</body>
 </html>

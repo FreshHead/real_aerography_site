@@ -1,36 +1,63 @@
-*{
-	margin:0px;
-	}
-
-html { 
-	background-color: #000000;
-	/*background-color: #0a0a0a;*/
-  /*background: url(images/bg2.jpg) ; */
-  /*-moz-background-size: cover;*/
-
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.wrapper {
-
-	width: 1200px;
-	margin: 0 auto;
+html,
+body {
+  background-color: #000000;
+  height: 100%;
 }
 
-.leftcol {
-  float: left; 
+#title {
+	height: 20%;
+	margin-left: 20%;
 }
-.rightcol {
-  margin-left: 400px;
+#wrapper {
+	/*width: 100%;*/
+	display: flex;
+
+  /*flex-direction: column;*/
+  height: 80%;
+
+	justify-content: center;
+	/*align-items: flex-end;*/
+
+		flex-wrap: wrap;
+align-content: space-between;
+
+/*	margin:0px auto;
+	width: 1000px;*/
 }
 
-.menu { 
-	font-family: 'Capture it', arial;
-	color: white;
-    font-size: 30px;
-    cursor: pointer;
+#sidebar {
+	/*flex: 1 2 100px;*/
+	/*width: 50%;*/
+  font-family: 'Capture it', arial;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  /*background-color: red;*/
+  /*width: 40%;*/
+  /*flex: auto;*/
 }
 
-.left {
+#slider {
+	margin-left: 20px;
+		/*width: 50%;*/
+
+	/*flex: 1 0 auto;*/
+	/*background-color: blue;*/
+
+	/*margin-left:40%;*/
+}
+
+/*#categories {
+		border-color: white;
+	border-width: 5px;
+}*/
+
+/*.left {
 	transform:scale(-1,1);
 	position: absolute;
 	top:500px;
@@ -53,12 +80,19 @@ html {
 
 .right_hold:hover .right {
 	opacity:0.9;
-}
+}*/
 
 #footer {
-	margin-top: 200px;
+	 flex: 1 1 auto;
+	 width: 100%;
+}
+#siren {
+	float: left;
 }
 
-p {
+#contacts {
+	font-family: 'Capture it', arial;
 	color: white;
+	font-size: 20px;
+	padding-top: 80px;
 }
