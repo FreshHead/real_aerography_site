@@ -7,44 +7,40 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="js/slider.js"></script> 
 		<meta charset="utf-8">
-</script>
 	</head>
-	<body>
-			
-<img id="title" src="images/title.gif">
-<div id="wrapper">
-				<div id="sidebar">
-					<a onclick="setCategory('cars')">Автомобили</a><br>
-				  <a onclick="setCategory('aquapark')">Аквапарк</a><br>
-		      <a onclick="setCategory('lacquer_miniature')">Лаковая миниатюра</a><br>
-		      <a onclick="setCategory('small_forms')">Малые формы</a><br>
-		      <a onclick="setCategory('exterior_design')">Наружное оформление</a><br>
-		      <a onclick="setCategory('interiors')">Интерьеры</a><br>
-		      <a onclick="setCategory('aircrafts')">Самолёты</a><br>
-		      <a onclick="setCategory('sculpture')">Скульптуры</a><br>
-		      <a onclick="setCategory('helmets')">Шлемы</a><br>
-				</div>
-				<div id="slider">
-					<img id="categories" src="images/categories/cars/img1.png">					
-					<!-- <div class="controls">
-						<div class="left_hold">
-							<img onClick="shiftImageInCategory(-1)" class="left" src="images/control.svg">
-						</div>
-						<div class="right_hold">
-							<img onClick="shiftImageInCategory(1)" class="right" src="images/control.svg">
-						</div> -->
-					</div>
-						<div id="footer">
-					<img id="siren" src="images/siren.png">
-					<p id="contacts">Ганиев Сирень Арсланович<br>
-					почта: siren-art@mail.ru<br>
-					телефон: +7(909)308-87-99</p>	
-	    </div>
-				</div>
-
-		</div>
+	<div id="wrapper">
+		<img id="title" src="images/title.gif">
+		<div id=content>
+			<div id="sidebar">
+				<a onclick="setCategory('cars')">Автомобили</a><br>
+			  <a onclick="setCategory('aquapark')">Аквапарк</a><br>
+	      <a onclick="setCategory('lacquer_miniature')">Лаковая миниатюра</a><br>
+	      <a onclick="setCategory('small_forms')">Малые формы</a><br>
+	      <a onclick="setCategory('exterior_design')">Наружное оформление</a><br>
+	      <a onclick="setCategory('interiors')">Интерьеры</a><br>
+	      <a onclick="setCategory('aircrafts')">Самолёты</a><br>
+	      <a onclick="setCategory('sculpture')">Скульптуры</a><br>
+	      <a onclick="setCategory('helmets')">Шлемы</a><br>
 			</div>
-			
-		
-	</body>
+			<div id="slider" class="image">
+			<div id=gallery>
+				<img id="categories" src="images/categories/cars/img1.png">	
+			</div>	
+					<div id="controls">
+					<div class="left_hold">
+						<img onClick="shiftImageInCategory(-1)" class="left" class="image" src="images/control.svg">
+					</div>
+					<div class="right_hold">
+						<img onClick="shiftImageInCategory(1)" class="right" src="images/control.svg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<img id="siren" src="images/siren.png">
+			<p id="contacts">Ганиев Сирень Арсланович<br>
+			почта: siren-art@mail.ru<br>
+			телефон: +7(909)308-87-99</p>	
+	  </div>
+	</div>
 </html>
